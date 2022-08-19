@@ -85,8 +85,15 @@ body{
     margin-left: 4em;
     margin-top: 2em;
     box-shadow: 2px 5px 5px 0px rgba(0, 0, 0, 0.322);
+    transition: background-color 0.15s, color 0.15s;
 }
 
+
+.button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    cursor: pointer;
+}
 
 .bottom{
     width: 100%;
@@ -94,7 +101,7 @@ body{
     bottom: 30px;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-end;
     align-items: center;
     
 }
@@ -109,6 +116,10 @@ body{
     padding: 4px 4px 4px 4px;
 }
 
+.facebook:hover{
+    border-color: hsl(300, 69%, 71%);
+    fill:hsl(300, 69%, 71%);
+}
 
 
 .twitter{
