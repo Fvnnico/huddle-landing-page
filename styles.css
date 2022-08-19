@@ -108,7 +108,10 @@ body{
 
 
 .facebook{
+    background: url('images/facebook.svg');
+    background:no-repeat;
     width: 30px;
+    height: 30px;
     border: 1px solid white;
     border-radius: 20px;
     position: absolute;
@@ -118,24 +121,5 @@ body{
 
 .facebook:hover{
     border-color: hsl(300, 69%, 71%);
-    fill:hsl(300, 69%, 71%);
-}
-
-
-.twitter{
-    width: 30px;
-    border: 1px solid white;
-    border-radius: 20px;
-    position: absolute;
-    right: 120px;
-    padding: 4px 4px 4px 4px;
-}
-
-.instagram{
-    width: 30px;
-    border: 1px solid white;
-    border-radius: 20px;
-    position: absolute;
-    right: 60px;
-    padding: 4px 4px 4px 4px;
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
 }
