@@ -10,6 +10,7 @@ body{
     height: 100vh;
 }   
 
+/* main */
 
 .container{
     width: 100%;
@@ -27,13 +28,15 @@ body{
 .icon1{
     width: 13%;
     position: absolute;
-    top: 10%;
-    left: 5%;
+    top: 5%;
+    left: 2.5%;
 }
 
 .icon2{
     width: 54%;
 }
+
+/* body part */
 
 .middle{
     position: absolute;
@@ -114,6 +117,8 @@ body{
 }
 
 
+/* social media */
+
 .facebook{
     background:no-repeat;
     width: 20px;
@@ -169,3 +174,190 @@ body{
     filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
     cursor: pointer;
 }
+
+
+/* media query */
+
+@media (max-width:750px){
+    .container{
+        width: 35%;
+        height: 100%;
+        position: relative;
+    }
+    
+    .background{
+        height: 100%; 
+        transform: rotate(280deg); 
+        margin-left:  -320px;
+        margin-top: -500px; 
+        background-size: 100%;
+        background-repeat: no-repeat;
+        
+    }
+    
+    
+    .icon1{
+        width: 150%;
+        position: absolute;
+        top: 10%;
+        left: 6rem;
+    }
+    
+    .icon2{
+        width: 100%;
+        margin-left: 25vw;
+    }
+
+    .middle{
+        position: absolute;
+        top: 30vh;
+        left: 4em;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    
+    .inner-container{
+        width: 750px;
+        position: relative;
+        top: -3em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    
+    
+    .title{
+        margin-top: 10vh;
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 3rem;
+        color: white;
+        margin-left: 40vw;
+        
+        
+    }
+    
+    .content{
+        font-family: Open Sans;
+        color: white;
+        margin-left: 40vw;
+        font-size: 2rem;
+        text-align: center;
+        line-height: 50px;
+        margin-right: 3em;
+        margin-top: 1.5em;
+    
+    }
+
+
+    .button{
+        font-family: Open Sans;
+        font-size: 28px;
+        font-weight: 600;
+        background-color: white;
+        color: hsl(257, 33%, 49%);
+        border: none;
+        width: fit-content;
+        border-radius: 50px;
+        padding-left: 40vw;
+        padding-right: 40vw;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        margin-left: 2em;
+        margin-top: 2em;
+        box-shadow: 2px 5px 5px 0px rgba(0, 0, 0, 0.322);
+        transition: background-color 0.15s, color 0.15s;
+    }
+    
+    
+    .button:hover{
+        background-color: hsl(300, 69%, 71%);
+        color: white;
+        cursor: pointer;
+    }
+    
+    .bottom{
+        width: 100%;
+        position: relative;
+        bottom: -200vh;
+        left: 120vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        
+    }
+    
+    
+    
+    
+    .facebook{
+        background:no-repeat;
+        width: 30px;
+        height: 30px;
+        border: 1px solid white;
+        border-radius: 30px;
+        position: absolute;
+        bottom: 300px;
+        right: 180px;
+        padding: 8px 8px 8px 8px;
+        filter: invert(0.5) brightness(0) invert(1);
+    }
+    
+    .twitter{
+        background:no-repeat;
+        width: 30px;
+        height: 30px;
+        border: 1px solid white;
+        border-radius: 30px;
+        position: absolute;
+        bottom: 300px;
+        right: 100px;
+        padding: 8px 8px 8px 8px;
+        filter: invert(0.5) brightness(0) invert(1);
+    }
+    
+    .instagram{
+        background:no-repeat;
+        width: 30px;
+        height: 30px;
+        border: 1px solid white;
+        border-radius: 30px;
+        position: absolute;
+        bottom: 300px;
+        right: 20px;
+        padding: 8px 8px 8px 8px;
+        filter: invert(0.5) brightness(0) invert(1);
+    }
+    
+    
+    .facebook:hover{
+        border-color: hsl(300, 69%, 71%);
+        filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+        cursor: pointer;
+    }
+    
+    
+    .twitter:hover{
+        border-color: hsl(300, 69%, 71%);
+        filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+        cursor: pointer;
+    }
+    
+    .instagram:hover{
+        border-color: hsl(300, 69%, 71%);
+        filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+        cursor: pointer;
+    }
+
+
+
+}
+
+
+
+    
